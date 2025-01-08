@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+    <title>25:00</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <button id="mode-toggle" class="mode-toggle">
+            <span id="mode-icon">☀️</span>
+        </button>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="status">
+            <p id="status-text">Work Time</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <audio id="work-complete" preload="auto">
+        <source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" type="audio/ogg">
+    </audio>
+    <audio id="break-complete" preload="auto">
+        <source src="https://actions.google.com/sounds/v1/alarms/mechanical_clock_ring.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html> 
