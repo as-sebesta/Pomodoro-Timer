@@ -35,12 +35,15 @@ h1 {
 }
 
 .timer {
-    font-size: 5rem;
-    font-weight: 800;
-    color: #212529;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #FF6B6B;
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+    background: linear-gradient(145deg, #2C3E50, #3498DB);
+    padding: 2rem;
+    border-radius: 15px;
     margin: 2rem 0;
-    font-variant-numeric: tabular-nums;
-    letter-spacing: -2px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .controls {
@@ -110,4 +113,20 @@ button:active {
 .mode-toggle:hover {
     transform: scale(1.1);
     box-shadow: none;
+}
+
+.controls button {
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.controls button:hover {
+    background-color: #27AE60;
+    transform: translateY(-2px);
 } 
